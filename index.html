@@ -3,25 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Gaëlle Audéoud | Physicist</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
+        <div class="header-content">
+            <a href="index.html" class="logo">Gaëlle Audéoud</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="#cv">CV</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#posters">Posters</a>
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome</h1>
-            <p>Your personal website</p>
+        <section id="hero" class="hero">
+            <h1>Gaëlle Audéoud</h1>
+            <p class="subtitle">Physicist</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About</h2>
+            <div class="section-content">
+                <p>Welcome to my website. I am a physicist working on [your research area]. Add your bio and background here.</p>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research</h2>
+            <div class="section-content">
+                <p>Describe your research interests and current projects here.</p>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <h2>Publications</h2>
+            <div class="section-content">
+                <ul class="publications-list">
+                    <li>
+                        <span class="pub-title">Publication Title</span>
+                        <span class="pub-authors">Authors</span>
+                        <span class="pub-journal">Journal, Year</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cv" class="section">
+            <h2>CV</h2>
+            <div class="section-content">
+                <p>View or download my CV:</p>
+                <a href="assets/Gaëlle_Audéoud_CV_MCE.pdf" class="btn" target="_blank">Download CV (PDF)</a>
+            </div>
+        </section>
+
+        <section id="teaching" class="section">
+            <h2>Teaching</h2>
+            <div class="section-content">
+                <p>List your teaching experience, courses, and materials here.</p>
+            </div>
+        </section>
+
+        <section id="posters" class="section">
+            <h2>Posters & Presentations</h2>
+            <div class="section-content">
+                <p>List your conference posters and presentations here.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026</p>
+        <p>&copy; 2026 Gaëlle Audéoud</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
